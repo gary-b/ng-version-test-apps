@@ -1,0 +1,21 @@
+{
+  "name": "ng-version-test-apps",
+  "description": "Test AngularJS Apps",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular2":"angular#>=1.2.0 <1.3.0",
+    "angular3":"angular#>=1.3.0 <1.4.0",
+    "angular4":"angular#>=1.4.0 <1.5.0"
+  },
+  "authors": [
+    "na"
+  ],
+  "license": "none",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

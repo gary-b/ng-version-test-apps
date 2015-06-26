@@ -1,0 +1,23 @@
+<div>
+    <h2>Nested Scopes Test</h2>
+    <div data-ng-controller="nested-a">
+        nested-a controller<br/>
+        <input type="text" ng-model="a.a"><br/>
+        <br/>
+        <div data-ng-controller="nested-b">
+            nested-b controller<br/>
+            <input type="text" ng-model="a.a"><br/>
+            <input type="text" ng-model="b.b"><br/>
+            <br/>
+            <div data-ng-controller="nested-c">
+                nested-c controller<br/>
+                <input type="text" ng-model="a.a"><br/>
+                <input type="text" ng-model="b.b"><br/>
+                <input type="text" ng-model="c.c">
+            </div>
+        </div>
+    </div>
+    <br/>
+    End of Nested Scopes Test
+    <br/>
+</div>
