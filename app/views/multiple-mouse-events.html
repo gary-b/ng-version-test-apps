@@ -13,4 +13,10 @@
     </a>
     <div>History Log: <button ng-click="mouseEvents = []">Reset</button></div>
     <div ng-repeat="mouseEvent in mouseEvents track by $index">{{ mouseEvent }}</div>
+    <h3>ngBlur and ngFocus on same element</h3>
+    <input type="text" class="form-control" name="name"
+           ng-blur="blurOrFocusEvent('blur')"
+           ng-focus="blurOrFocusEvent('focus')" />
+    <div>Log of blur and focus events on above textbox</div>
+    <div ng-repeat="event in blurAndFocusEvents track by $index">{{event}}</div>
 </div>

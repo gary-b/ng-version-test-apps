@@ -30,4 +30,8 @@ angular.module('testApp').controller('mouseEvents', function($scope){
     $scope.mouseEvent = function(eventName) {
         $scope.mouseEvents.push(eventName);
     };
+    $scope.blurAndFocusEvents = [];
+    $scope.blurOrFocusEvent = function(eventName){
+        $scope.blurAndFocusEvents.push(eventName);
+    };
 });
