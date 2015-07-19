@@ -1,0 +1,16 @@
+<div ng-controller="mouseEvents">
+    <h2>Multiple mouse events</h2>
+    <h3>Test A</h3>
+    <div>
+        <div ng-mousedown="count = count + 1" ng-mouseup="count = count - 1" ng-init="count=0">
+            On mouse down, the count below should increment. On mouse up, it should decrement again.
+        </div>
+        <div>{{count}}</div>
+    </div>
+    <h3>Test B</h3>
+    <a ng-mouseover="mouseEvent('mouseover')" ng-mouseleave="mouseEvent('mouseleave')" ng-click="mouseEvent('click')">
+        Hovering over this line should produce mouseover and mouseleave events in the history log. Click events are also logged.
+    </a>
+    <div>History Log: <button ng-click="mouseEvents = []">Reset</button></div>
+    <div ng-repeat="mouseEvent in mouseEvents track by $index">{{ mouseEvent }}</div>
+</div>
